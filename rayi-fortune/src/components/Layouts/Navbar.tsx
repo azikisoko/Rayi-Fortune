@@ -10,6 +10,8 @@ import Icon from "../../components/UI/Icons";
 const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/About" },
+  { label: "Projects", href: "/Projects" },
+  { label: "Contact", href: "/Contact" },
 ];
 
 const RESUME_URL = "/resume.pdf";
