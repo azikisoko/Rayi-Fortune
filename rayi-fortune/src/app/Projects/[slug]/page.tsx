@@ -12,22 +12,24 @@ interface ProjectPageProps {
   params: Promise<{ slug: string }>;
 }
 
-export async function generateMetadata({
-  params,
-}: ProjectPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);
 
   if (!project) {
-    return { title: "Project Not Found | Rayi Fortune" };
+    return { title: "Project Not Found" };
   }
 
   return {
-    title: `${project.title} | Rayi Fortune`,
+    title: project.title,
     description: project.description,
+    openGraph: {
+      title: project.title,
+      description: project.description,
+      images: [project.image],
+    },
   };
 }
-
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);

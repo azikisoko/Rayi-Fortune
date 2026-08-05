@@ -4,10 +4,10 @@ import AnimatedText from "../../components/UI/AnimatedText";
 import ContactForm from "./_Components/ContactForm";
 import SocialLinks from "./_Components/SocialLinks";
 
+// src/app/contact/page.tsx
 export const metadata: Metadata = {
-  title: "Contact | Rayi Fortune",
-  description:
-    "Get in touch with Rayi Fortune for full-stack development and machine learning projects.",
+  title: "Contact",
+  description: "Get in touch with Rayi Fortune for full-stack development and machine learning projects.",
 };
 
 export default function ContactPage() {

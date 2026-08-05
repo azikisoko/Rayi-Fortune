@@ -7,8 +7,9 @@ import ScrollProgressBar from "../../components/UI/ScrollProgressBar";
 import EmailBubble from "../../components/UI/EmailBubble";
 import EngagementPopup from "../../components/UI/EngagementPopup";
 
+// src/app/about/page.tsx
 export const metadata: Metadata = {
-  title: "About | Rayi Fortune",
+  title: "About",
   description: "Learn more about Rayi Fortune — Full-Stack Developer & ML Engineer.",
 };
 

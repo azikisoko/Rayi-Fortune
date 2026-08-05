@@ -45,3 +45,16 @@ body {
   background-color: var(--color-background);
   color: var(--color-foreground);
 }
+
+/* src/app/globals.css — add this at the end */
+
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}

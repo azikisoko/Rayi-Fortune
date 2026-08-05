@@ -23,7 +23,7 @@ export default function ContactForm() {
     setErrorMessage("");
 
     try {
-      const response = await fetch("/api/Contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
