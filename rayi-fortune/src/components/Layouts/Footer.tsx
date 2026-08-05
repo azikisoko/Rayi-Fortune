@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  { label: "About", href: "/About" },
 ];
 
 const SOCIAL_LINKS = [
