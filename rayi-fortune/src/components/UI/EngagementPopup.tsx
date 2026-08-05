@@ -19,13 +19,26 @@ export default function EngagementPopup() {
       trigger: "#site-footer",
       start: "top 85%",
       once: true,
+      invalidateOnRefresh: true,
       onEnter: () => {
         setIsVisible(true);
         sessionStorage.setItem(STORAGE_KEY, "true");
       },
     });
 
-    return () => trigger.kill();
+    const refresh = () => ScrollTrigger.refresh();
+    window.addEventListener("load", refresh);
+
+    const resizeObserver = new ResizeObserver(() => {
+      ScrollTrigger.refresh();
+    });
+    resizeObserver.observe(document.body);
+
+    return () => {
+      window.removeEventListener("load", refresh);
+      resizeObserver.disconnect();
+      trigger.kill();
+    };
   }, []);
 
   useEffect(() => {

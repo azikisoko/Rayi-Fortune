@@ -3,7 +3,7 @@
 
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import { gsap } from "../../lib/gsap";
+import { gsap, ScrollTrigger } from "../../lib/gsap";
 
 export default function ScrollProgressBar() {
   const barRef = useRef<HTMLDivElement>(null);
@@ -11,7 +11,7 @@ export default function ScrollProgressBar() {
   useGSAP(() => {
     gsap.set(barRef.current, { scaleX: 0, transformOrigin: "left center" });
 
-    gsap.to(barRef.current, {
+    const tween = gsap.to(barRef.current, {
       scaleX: 1,
       ease: "none",
       scrollTrigger: {
@@ -19,8 +19,26 @@ export default function ScrollProgressBar() {
         start: "top top",
         end: "bottom bottom",
         scrub: 0.3,
+        invalidateOnRefresh: true,
       },
     });
+
+    // Force a recalculation after everything (images, fonts, late content) has settled
+    const refresh = () => ScrollTrigger.refresh();
+
+    window.addEventListener("load", refresh);
+
+    const resizeObserver = new ResizeObserver(() => {
+      ScrollTrigger.refresh();
+    });
+    resizeObserver.observe(document.body);
+
+    return () => {
+      window.removeEventListener("load", refresh);
+      resizeObserver.disconnect();
+      tween.scrollTrigger?.kill();
+      tween.kill();
+    };
   }, []);
 
   return (
