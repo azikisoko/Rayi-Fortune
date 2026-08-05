@@ -61,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <CursorEffects />
           <ScrollProgressBar />
           <Navbar />
-          <main className="relative z-10">{children}</main>
+          <main className="relative z-0">{children}</main>
           <Footer />
           <EmailBubble />
         </ThemeProvider>

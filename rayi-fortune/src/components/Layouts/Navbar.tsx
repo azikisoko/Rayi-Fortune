@@ -6,6 +6,7 @@ import { Menu, X, Download } from "lucide-react";
 import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import ThemeToggle from "../../components/Theme/ThemeToggle";
 import Icon from "../../components/UI/Icons";
+import { CONTACT } from "../../lib/constants";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -15,8 +16,6 @@ const NAV_LINKS = [
 ];
 
 const RESUME_URL = "/resume.pdf";
-const GITHUB_URL = "https://github.com/your-username";
-const WHATSAPP_URL = "https://wa.me/yourNumberWithCountryCode";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +49,7 @@ export default function Navbar() {
             <Download className="w-4 h-4" />
           </a>
           <a
-            href={GITHUB_URL}
+            href={CONTACT.github}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -59,7 +58,7 @@ export default function Navbar() {
             <Icon icon={FaGithub} className="w-4 h-4" />
           </a>
           <a
-            href={WHATSAPP_URL}
+            href={`https://wa.me/${CONTACT.whatsapp}`}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
@@ -95,10 +94,15 @@ export default function Navbar() {
             <a href={RESUME_URL} download aria-label="Download resume">
               <Download className="w-4 h-4" />
             </a>
-            <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href={CONTACT.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Icon icon={FaGithub} className="w-4 h-4" />
             </a>
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <a
+              href={`https://wa.me/${CONTACT.whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
               <Icon icon={FaWhatsapp} className="w-4 h-4" />
             </a>
             <ThemeToggle />

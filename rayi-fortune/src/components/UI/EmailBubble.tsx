@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { Mail } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "../../lib/gsap";
+import { CONTACT } from "../../lib/constants";
 
 export default function EmailBubble() {
   const ringRef = useRef<HTMLSpanElement>(null);
@@ -21,7 +22,7 @@ export default function EmailBubble() {
 
   return (
     <a
-      href="mailto:youremail@example.com"
+      href={`mailto:${CONTACT.email}`}
       aria-label="Send me an email"
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg hover:opacity-90 transition-opacity"
     >
