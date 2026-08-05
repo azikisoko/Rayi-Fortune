@@ -36,7 +36,7 @@ export default function Hero() {
           <ArrowRight className="w-4 h-4" />
         </Link>
         <Link
-          href="/contact"
+          href="/Contact"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border text-sm font-medium hover:bg-muted transition-colors"
         >
           Get In Touch

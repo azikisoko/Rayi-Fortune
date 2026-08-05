@@ -7,7 +7,6 @@ import Navbar from "../components/Layouts/Navbar";
 import Footer from "../components/Layouts/Footer";
 import ScrollProgressBar from "../components/UI/ScrollProgressBar";
 import EmailBubble from "../components/UI/EmailBubble";
-import EngagementPopup from "../components/UI/EngagementPopup";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,7 +33,6 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
           <EmailBubble />
-          <EngagementPopup />
         </ThemeProvider>
       </body>
     </html>

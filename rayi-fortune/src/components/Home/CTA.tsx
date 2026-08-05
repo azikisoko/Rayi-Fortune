@@ -13,7 +13,7 @@ export default function CTA() {
       />
       <div className="mt-8">
         <Link
-          href="/contact"
+          href="/Contact"
           className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
         >
           Get In Touch
