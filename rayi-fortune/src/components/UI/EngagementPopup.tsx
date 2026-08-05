@@ -68,7 +68,7 @@ export default function EngagementPopup() {
   return (
     <div
       ref={overlayRef}
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm px-4"
+      className="fixed inset-0 z-100 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4"
     >
       <div
         ref={popupRef}
@@ -88,7 +88,7 @@ export default function EngagementPopup() {
         <p className="text-muted-foreground mb-6">Let&apos;s work together.</p>
 
         <a
-          href="/contact"
+          href="/Contact"
           className="inline-block px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
         >
           Get in Touch

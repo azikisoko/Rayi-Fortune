@@ -29,7 +29,7 @@ export default function Hero() {
 
       <div className="flex flex-wrap items-center gap-4 mt-10">
         <Link
-          href="/projects"
+          href="/Projects"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
         >
           View My Work
