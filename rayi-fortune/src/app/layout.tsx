@@ -57,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <head>
         <PersonSchema />
+        <meta name="google-site-verification" content="AmwRqgSOPASoZ6Osyk_6JhHGfBjoYZDaKbT2DRyaSp0" />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
