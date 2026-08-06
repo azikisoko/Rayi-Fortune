@@ -4,15 +4,28 @@
 import { useEffect, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap, ScrollTrigger } from "../../lib/gsap";
+import { usePathname } from "next/dist/client/components/navigation";
+import { createPortal } from "react-dom";
 
 const STORAGE_KEY = "portfolio_engagement_popup_shown";
+const EXCLUDED_PATHS = ["/Contact"];
 
 export default function EngagementPopup() {
+  const pathname = usePathname();
   const [isVisible, setIsVisible] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
 
+  const isExcluded = EXCLUDED_PATHS.includes(pathname);
+
+  // Portals require the DOM to exist — this ensures we're client-side before rendering
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   useGSAP(() => {
+    if (isExcluded) return;
     if (sessionStorage.getItem(STORAGE_KEY)) return;
 
     const trigger = ScrollTrigger.create({
@@ -39,7 +52,18 @@ export default function EngagementPopup() {
       resizeObserver.disconnect();
       trigger.kill();
     };
-  }, []);
+  }, [pathname, isExcluded]);
+
+  /*useEffect(() => {
+    if (isVisible) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isVisible]);*/
 
   useEffect(() => {
     if (!isVisible) return;
@@ -63,12 +87,12 @@ export default function EngagementPopup() {
     gsap.to(overlayRef.current, { opacity: 0, duration: 0.3 });
   };
 
-  if (!isVisible) return null;
+  if (!isMounted || isExcluded || !isVisible) return null;
 
-  return (
+  return createPortal(
     <div
       ref={overlayRef}
-      className="fixed inset-0 z-100 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-sm px-4"
     >
       <div
         ref={popupRef}
@@ -94,6 +118,7 @@ export default function EngagementPopup() {
           Get in Touch
         </a>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

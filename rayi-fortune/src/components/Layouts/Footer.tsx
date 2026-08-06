@@ -26,7 +26,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="site-footer" className="relative z-0 border-t border-border">
+    <footer id="site-footer" className="relative z-10 border-t border-border">
       <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <h3 className="text-xl font-semibold text-foreground mb-3">Rayi Fortune</h3>
