@@ -22,7 +22,7 @@ export const skillCategories: SkillCategory[] = [
     groups: [
       { label: "Core", items: ["HTML", "CSS", "Tailwind CSS"] },
       { label: "Frameworks", items: ["React", "Next.js"] },
-      { label: "Animation", items: ["GSAP"] },
+      { label: "Animation", items: ["GSAP", "Framer Motion"] },
       { label: "Design", items: ["Figma"] },
       { label: "UI", items: ["Responsive Design", "Accessibility (WCAG)", "Modern UI/UX Principles"] },
     ],
@@ -41,7 +41,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Databases",
     emoji: "🗄",
     groups: [
-      { label: "SQL", items: ["PostgreSQL"] },
+      { label: "SQL", items: ["PostgreSQL", "SQLite"] },
       { label: "NoSQL", items: ["MongoDB"] },
       { label: "ORM", items: ["Prisma", "SQLAlchemy"] },
     ],
@@ -50,7 +50,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Deployment & Cloud",
     emoji: "☁️",
     groups: [
-      { label: "Platforms & Tools", items: ["Vercel", "Railway", "Docker", "GitHub Actions (CI/CD)", "Basic Linux", "Nginx"] },
+      { label: "Platforms & Tools", items: ["Vercel", "Railway", "Docker", "GitHub Actions (CI/CD)", "Basic Linux", "Nginx", "AWS"] },
     ],
   },
   {
@@ -69,7 +69,7 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Tools",
     emoji: "🔧",
-    groups: [{ label: "Everyday Tools", items: ["Git", "GitHub", "VS Code", "Postman", "Jupyter Notebook", "Google Colab"] }],
+    groups: [{ label: "Everyday Tools", items: ["Git", "GitHub", "VS Code", "Postman", "Jupyter Notebook", "Kaggle Notebook", "Google Colab"] }],
   },
   {
     title: "Networking",
@@ -99,7 +99,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Business Skills",
     emoji: "📈",
     groups: [
-      { label: "Skills", items: ["Client Communication", "Requirements Gathering", "UI/UX Thinking", "Pricing", "Proposal Writing", "Project Management", "Sales", "Product Thinking"] },
+      { label: "Skills", items: ["Client Communication", "Sales", "Requirements Gathering", "UI/UX Thinking", "Proposal Writing", "Project Management", "Product Thinking"] },
     ],
   },
 ];
