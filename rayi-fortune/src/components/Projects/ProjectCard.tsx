@@ -11,7 +11,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Link
-      href={`/projects/${project.slug}`}
+      href={`/Projects/${project.slug}`}
       className="project-card group rounded-2xl border border-border overflow-hidden hover:border-primary/40 transition-colors"
     >
       <div className="relative aspect-video bg-muted overflow-hidden">

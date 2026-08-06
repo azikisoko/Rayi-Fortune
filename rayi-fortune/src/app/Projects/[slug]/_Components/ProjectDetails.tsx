@@ -81,11 +81,11 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
 
       {/* Placeholder — replace with a real written case study per project */}
       <div className="mt-12 space-y-4">
-        <h2 className="text-2xl font-semibold text-foreground">Overview</h2>
-        <p className="text-muted-foreground leading-relaxed">
-          Replace this section with a detailed write-up of the problem, your approach, key technical decisions, challenges faced, and results achieved for this project.
-        </p>
-      </div>
+  <h2 className="text-2xl font-semibold text-foreground">Overview</h2>
+  <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+    {project.overview}
+  </p>
+</div>
     </article>
   );
 }
