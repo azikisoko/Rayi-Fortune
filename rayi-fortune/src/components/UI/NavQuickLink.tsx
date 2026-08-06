@@ -6,8 +6,8 @@ import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Icon from "../../components/UI/Icons";
 
 const RESUME_URL = "/resume.pdf";
-const GITHUB_URL = "https://github.com/your-username";
-const WHATSAPP_URL = "https://wa.me/yourNumberWithCountryCode";
+const GITHUB_URL = "https://github.com/Azikisoko";
+const WHATSAPP_URL = "https://wa.me/2349139932456";
 
 export default function NavQuickLinks() {
   return (

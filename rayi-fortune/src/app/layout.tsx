@@ -55,9 +55,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <PersonSchema />
+      </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <PersonSchema />
           <CursorEffects />
           <ScrollProgressBar />
           <Navbar />

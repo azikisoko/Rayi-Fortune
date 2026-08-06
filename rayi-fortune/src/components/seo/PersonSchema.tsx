@@ -11,7 +11,7 @@ export default function PersonSchema() {
     description:
       "Full-Stack Developer and Machine Learning Engineer who builds fast, scalable web applications and intelligent AI solutions.",
     sameAs: [
-      "https://github.com/your-username",
+      "https://github.com/Azikisoko",
       "https://linkedin.com/in/your-username",
     ],
     knowsAbout: [
