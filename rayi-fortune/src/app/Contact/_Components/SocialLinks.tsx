@@ -51,7 +51,7 @@ export default function SocialLinks() {
         </div>
       </a>
 
-      <LinkedInLink className="w-full flex items-center gap-4 rounded-xl border border-border p-4 hover:border-primary/40 hover:bg-muted/30 transition-colors group text-left">
+      {/* <LinkedInLink className="w-full flex items-center gap-4 rounded-xl border border-border p-4 hover:border-primary/40 hover:bg-muted/30 transition-colors group text-left">
         <span className="flex items-center justify-center w-10 h-10 rounded-full bg-muted text-muted-foreground group-hover:text-primary transition-colors shrink-0">
           <FaLinkedin className="w-4 h-4" />
         </span>
@@ -59,7 +59,7 @@ export default function SocialLinks() {
           <p className="text-sm font-medium text-foreground">LinkedIn</p>
           <p className="text-xs text-muted-foreground">Temporarily unavailable</p>
         </div>
-      </LinkedInLink>
+      </LinkedInLink> */}
     </div>
   );
 }
