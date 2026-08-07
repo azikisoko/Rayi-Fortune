@@ -12,16 +12,15 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "tumor-classification",
-    title: "Brain Tumor Classification",
-    description:
-      "A multiclass MRI classification system identifying Glioma, Meningioma, Pituitary tumors, and healthy scans using transfer learning with EfficientNetB0.",
-    image: "/images/projects/tumor-classification.webp",
-    technologies: ["Python", "TensorFlow", "EfficientNetB0", "FastAPI", "Next.js"],
-    githubUrl: "https://github.com/azikisoko/Brain-Tumor-Classification-Using-Deep-Learning",
-    liveUrl: "https://brain-tumor-classification-using-de.vercel.app/",
+    slug: "dropbox-airtable-link-generator",
+    title: "Automated Dropbox-Airtable Folder Link Generator",
+    description:"A Python-based automation script that scans a client's Dropbox account, identifies specific folders across 20,000+ records, generates shareable links for them, and updates the corresponding Airtable rows — without affecting existing data. Built to solve a bulk data-linking problem that was previously handled manually, this tool integrates directly with the Dropbox and Airtable APIs to deliver a fast, reliable, and safely re-runnable solution.",
+    image: "/images/projects/dropbox-airtable-link-generator.webp",
+    technologies: ["Python", "dropbox (Official Python SDK)", "pyairtable", "python-dotenv", "Git/GitHub"],
+    githubUrl: "https://github.com/azikisoko/Dropbox-Folder-Link-Generator",
+    liveUrl: "",
     featured: true,
-    overview: "This project focuses on developing a robust brain tumor classification system using deep learning techniques. It leverages transfer learning with EfficientNetB0 to identify different types of brain tumors from MRI scans."
+    overview: "This project addressed a real-world integration challenge for a client managing a media-based record system in Airtable, with corresponding storage folders in Dropbox. After an existing no-code automation (Make.com) silently failed due to authentication issues, a custom Python script was developed to audit and repair the data pipeline — specifically identifying empty Dropbox folders and generating shareable links for them, then syncing those links back into the correct Airtable records. The project involved systematic debugging across authentication, API permissions, and folder-path structure issues, ultimately tracing the root cause to an incorrectly scoped Dropbox app configuration. The final solution is idempotent, safely re-runnable, and includes diagnostic tooling for future maintenance — while also shifting Dropbox account control back to the client to reduce third-party liability."
   },
 ];
   /*{

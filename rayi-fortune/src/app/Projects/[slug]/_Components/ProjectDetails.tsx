@@ -14,7 +14,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
   return (
     <article className="max-w-4xl mx-auto px-6 pt-24 pb-24">
       <Link
-        href="/projects"
+        href="/Projects"
         className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
       >
         <ArrowLeft className="w-4 h-4" />
