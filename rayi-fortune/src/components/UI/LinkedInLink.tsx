@@ -1,4 +1,3 @@
-// src/components/ui/LinkedInLink.tsx
 "use client";
 
 import { useState } from "react";

@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import "./globals.css";
 import CursorEffects from "../components/UI/CursorEffects";
 import ScrollProgressBar from "../components/UI/ScrollProgressBar";
@@ -17,7 +16,6 @@ const inter = Inter({
   display: "swap",
 });
 
-// src/app/layout.tsx
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {

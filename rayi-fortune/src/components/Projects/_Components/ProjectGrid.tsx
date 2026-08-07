@@ -1,4 +1,3 @@
-// src/app/projects/_components/ProjectGrid.tsx
 "use client";
 
 import { useRef } from "react";

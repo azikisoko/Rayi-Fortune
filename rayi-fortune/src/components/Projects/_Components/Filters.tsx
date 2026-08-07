@@ -1,4 +1,3 @@
-// src/app/projects/_components/Filters.tsx
 "use client";
 
 interface FiltersProps {

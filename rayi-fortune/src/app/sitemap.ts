@@ -1,4 +1,3 @@
-// src/app/sitemap.ts
 import type { MetadataRoute } from "next";
 import { projects } from "../Data/Projects";
 import { SITE_URL } from "../lib/constants";

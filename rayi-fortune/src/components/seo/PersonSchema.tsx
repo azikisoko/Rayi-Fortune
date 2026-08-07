@@ -1,4 +1,3 @@
-// src/components/seo/PersonSchema.tsx
 import { SITE_URL } from "../../lib/constants";
 
 export default function PersonSchema() {

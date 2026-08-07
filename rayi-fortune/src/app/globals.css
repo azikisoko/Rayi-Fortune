@@ -1,4 +1,3 @@
-/* src/app/globals.css */
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
@@ -46,7 +45,6 @@ body {
   color: var(--color-foreground);
 }
 
-/* src/app/globals.css — add this at the end */
 
 html,
 body {

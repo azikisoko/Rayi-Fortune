@@ -1,4 +1,3 @@
-// src/app/about/_components/MyJourney.tsx
 import SectionTitle from "../../../components/UI/SectionTitle";
 
 

@@ -1,4 +1,3 @@
-// src/app/about/_components/Philosophy.tsx
 import SectionTitle from "../../../components/UI/SectionTitle";
 import AnimatedText from "../../../components/UI/AnimatedText";
 

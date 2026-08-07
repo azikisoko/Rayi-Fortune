@@ -1,4 +1,3 @@
-// src/app/about/_components/WhoIAm.tsx
 import AnimatedText from "../../../components/UI/AnimatedText";
 import Image from "next/image";
 

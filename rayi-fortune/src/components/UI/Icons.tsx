@@ -1,4 +1,3 @@
-// src/components/ui/Icon.tsx
 import { createElement } from "react";
 import type { IconType } from "react-icons";
 

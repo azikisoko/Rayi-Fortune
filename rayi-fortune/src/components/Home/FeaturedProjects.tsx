@@ -1,4 +1,3 @@
-// src/components/home/FeaturedProjects.tsx
 "use client";
 
 import { useRef } from "react";

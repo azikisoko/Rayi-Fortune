@@ -1,4 +1,3 @@
-// src/components/ui/AnimatedText.tsx
 "use client";
 
 import { useRef, ElementType } from "react";

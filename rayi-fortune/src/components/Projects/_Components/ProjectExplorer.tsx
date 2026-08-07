@@ -1,4 +1,3 @@
-// src/app/projects/_components/ProjectsExplorer.tsx
 "use client";
 
 import { useMemo, useState } from "react";

@@ -1,4 +1,3 @@
-// src/components/layout/NavQuickLinks.tsx
 "use client";
 
 import { MessageCircle, Download } from "lucide-react";

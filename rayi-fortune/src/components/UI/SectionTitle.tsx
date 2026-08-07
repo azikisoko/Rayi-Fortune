@@ -1,4 +1,3 @@
-// src/components/ui/SectionTitle.tsx
 import AnimatedText from "./AnimatedText";
 
 interface SectionTitleProps {

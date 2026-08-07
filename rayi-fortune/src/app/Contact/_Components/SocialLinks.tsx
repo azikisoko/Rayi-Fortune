@@ -1,4 +1,3 @@
-// src/app/contact/_components/SocialLinks.tsx
 import { Mail } from "lucide-react";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Icon from "../../../components/UI/Icons";

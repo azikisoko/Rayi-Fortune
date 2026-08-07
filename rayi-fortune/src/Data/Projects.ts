@@ -1,5 +1,3 @@
-// src/data/projects.ts
-// src/data/projects.ts
 export type Project = {
   slug: string;
   title: string;
@@ -9,7 +7,7 @@ export type Project = {
   githubUrl?: string;
   liveUrl?: string;
   featured?: boolean;
-  overview: string;   // ← new field, the detailed write-up shown on the project's page
+  overview: string;
 };
 
 export const projects: Project[] = [

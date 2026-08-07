@@ -1,4 +1,3 @@
-// src/components/ui/EmailBubble.tsx
 "use client";
 
 import { useRef } from "react";

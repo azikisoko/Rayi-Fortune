@@ -1,4 +1,3 @@
-// src/components/ui/EngagementPopup.tsx
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -19,7 +18,6 @@ export default function EngagementPopup() {
 
   const isExcluded = EXCLUDED_PATHS.includes(pathname);
 
-  // Portals require the DOM to exist — this ensures we're client-side before rendering
   useEffect(() => {
     setIsMounted(true);
   }, []);

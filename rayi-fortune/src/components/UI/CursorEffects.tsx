@@ -1,4 +1,3 @@
-// src/components/ui/CursorEffects.tsx
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -12,7 +11,6 @@ export default function CursorEffects() {
   const [isHovering, setIsHovering] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
 
-  // Detect touch vs. mouse/trackpad devices
   useEffect(() => {
     const mediaQuery = window.matchMedia("(pointer: fine)");
     setIsFinePointer(mediaQuery.matches);

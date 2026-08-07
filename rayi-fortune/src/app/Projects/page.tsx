@@ -1,9 +1,7 @@
-// src/app/projects/page.tsx
 import type { Metadata } from "next";
 import AnimatedText from "../../components/UI/AnimatedText";
 import ProjectsExplorer from "../../components/Projects/_Components/ProjectExplorer";
 
-// src/app/projects/page.tsx
 export const metadata: Metadata = {
   title: "Projects",
   description: "A collection of software engineering and machine learning projects by Rayi Fortune.",

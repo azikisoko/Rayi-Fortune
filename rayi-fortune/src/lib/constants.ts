@@ -1,4 +1,3 @@
-// src/lib/constants.ts
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://rayifortune.vercel.app";
 

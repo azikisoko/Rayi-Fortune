@@ -1,4 +1,3 @@
-// src/components/home/CTA.tsx
 import Link from "next/link";
 import SectionTitle from "../../components/UI/SectionTitle";
 

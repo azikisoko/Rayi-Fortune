@@ -1,4 +1,3 @@
-// src/data/skills.ts
 export type SkillCategory = {
   title: string;
   emoji: string;

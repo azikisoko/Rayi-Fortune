@@ -1,4 +1,3 @@
-// src/components/home/TechStack.tsx
 "use client";
 
 import { useRef } from "react";

@@ -1,4 +1,3 @@
-// src/components/ui/ScrollProgressBar.tsx
 "use client";
 
 import { useRef } from "react";
@@ -23,7 +22,6 @@ export default function ScrollProgressBar() {
       },
     });
 
-    // Force a recalculation after everything (images, fonts, late content) has settled
     const refresh = () => ScrollTrigger.refresh();
 
     window.addEventListener("load", refresh);
